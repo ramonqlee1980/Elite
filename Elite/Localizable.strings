@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Elite
+
+  Created by Ramonqlee on 11/15/13.
+  Copyright (c) 2013 iDreems. All rights reserved.
+*/
+"Title"="精致";
+"About"="版本V1.0.0  iDreems.com荣誉出品";
+
+
+"Tab_Title_Favorites"="收藏";
+"Tab_Title_Setting"="设置";
+"Tab_Title_RecommmendApps"="推荐";
+
+//setting
+"AboutTitle"="版本信息";
+"kMoreFeedBackKey"="用户反馈";
+"kMoreRateKey"="评个分";
+
+//tip
+"Add2FavoriteToast"="收藏成功";
+
+//
+"DlgTitle"="提示";
+"Cancel"="取消";
+"OK"="确认";
+
+"Retry2SyncChannels"="请求频道数据失败，重试一次？";
+"kSNSTipText"="如何打造精致美女？\n更多精彩内容，打开App Store，搜索: %@%@";
+"kSNSTipTextWithUrl"="如何打造精致美女？分享话题较长，已经自动转换为图片。\n%@";
+"kSNSTipTitle"="打造精致美女：%@";
