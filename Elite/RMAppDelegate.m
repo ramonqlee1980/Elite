@@ -17,6 +17,7 @@
 #import "MobiSageSDK.h"
 #import "AdsConfiguration.h"
 #import "Flurry.h"
+#import "RMSyncAdData.h"
 
 @interface RMAppDelegate()
 {
@@ -199,13 +200,14 @@
     [Flurry setCrashReportingEnabled:YES];
     
     retryWhenFail2SyncChannels = YES;//初始化重试标示
-    
 }
 //请求频道数据
 -(void)refreshChannels
 {
     [self addDataObserver];
     [[RMAppData sharedInstance].channelDataManager startRequest:kChannelUrl];
+    //TODO::请求广告数据，包括广告的id和开关信息
+    [[RMSyncAdData sharedInstance]startRequest];
 }
 
 @end

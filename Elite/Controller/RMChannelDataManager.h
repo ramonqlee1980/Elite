@@ -31,5 +31,5 @@ Decl_Singleton(RMChannelDataManager)
 //和服务器器的数据交互
 -(void)startRequest:(NSString*)url;
 -(void)stopRequest;
-
+    
 @end

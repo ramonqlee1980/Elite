@@ -15,6 +15,7 @@
 #import "UIImageView+WebCache.h"
 #import "RMTableCellImageTwinTextType.h"
 #import "Flurry.h"
+#import "RMSyncAdData.h"
 
 
 #define kEnableTestData NO//FIXME::测试数据
@@ -173,6 +174,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([[RMSyncAdData sharedInstance]recommmendWallVisible]) {
+        [CommonHelper showRecommendWall];
+    }
+    
     //check before going on
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     //    if (self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(canSelectRowAtIndexPath:)])

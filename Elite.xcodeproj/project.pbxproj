@@ -985,6 +985,7 @@
 		307196E118358BFB0009D047 /* RMTableCellImageTextType.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307196DC18358BFB0009D047 /* RMTableCellImageTextType.xib */; };
 		307196E218358BFB0009D047 /* RMTableCellImageTwinTextType.m in Sources */ = {isa = PBXBuildFile; fileRef = 307196DE18358BFB0009D047 /* RMTableCellImageTwinTextType.m */; };
 		307196E318358BFB0009D047 /* RMTableCellImageTwinTextType.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307196DF18358BFB0009D047 /* RMTableCellImageTwinTextType.xib */; };
+		307CB57C1848053E0045DE0C /* RMSyncAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 307CB57B1848053E0045DE0C /* RMSyncAdData.m */; };
 		30A56C83182D9DE90020305F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30A56C75182D9DE90020305F /* LICENSE */; };
 		30A56C84182D9DE90020305F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30A56C76182D9DE90020305F /* README.md */; };
 		30A56C85182D9DE90020305F /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A56C78182D9DE90020305F /* SDImageCache.m */; };
@@ -2157,6 +2158,8 @@
 		307196DD18358BFB0009D047 /* RMTableCellImageTwinTextType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTableCellImageTwinTextType.h; sourceTree = "<group>"; };
 		307196DE18358BFB0009D047 /* RMTableCellImageTwinTextType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTableCellImageTwinTextType.m; sourceTree = "<group>"; };
 		307196DF18358BFB0009D047 /* RMTableCellImageTwinTextType.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMTableCellImageTwinTextType.xib; sourceTree = "<group>"; };
+		307CB57A1848053E0045DE0C /* RMSyncAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSyncAdData.h; sourceTree = "<group>"; };
+		307CB57B1848053E0045DE0C /* RMSyncAdData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSyncAdData.m; sourceTree = "<group>"; };
 		30A56C75182D9DE90020305F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		30A56C76182D9DE90020305F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		30A56C77182D9DE90020305F /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -2309,11 +2312,9 @@
 		300761F81824872700D0D80C /* External */ = {
 			isa = PBXGroup;
 			children = (
-				30B7B99518398E4C0041D98D /* RecommendApps */,
-				30B7B991183984950041D98D /* Flurry */,
-				307196D6183583D80009D047 /* AH3DPullRefresh */,
 				302F51FF18265E27003FE4F6 /* Additions */,
 				302F520618265E28003FE4F6 /* AdPlatform */,
+				307196D6183583D80009D047 /* AH3DPullRefresh */,
 				302F518918265965003FE4F6 /* ASIHTTPRequest */,
 				3031D46A182B0C01004D6890 /* Base64 */,
 				30210E8A1829D70700406581 /* CMPopTipView */,
@@ -2321,6 +2322,7 @@
 				30A56C9D182EE98A0020305F /* CustomNaviBarButton */,
 				307196CC183582930009D047 /* DAPagesContainer */,
 				302F517B1825BDBE003FE4F6 /* DraggableView */,
+				30B7B991183984950041D98D /* Flurry */,
 				30A56C89182D9E740020305F /* Gifview */,
 				302F592018265FD1003FE4F6 /* HUD */,
 				302F530618265E5E003FE4F6 /* IAP */,
@@ -2329,6 +2331,7 @@
 				302F528118265E28003FE4F6 /* JSONKit */,
 				302F528418265E28003FE4F6 /* NSString-HTML */,
 				302F528918265E28003FE4F6 /* Reachability */,
+				30B7B99518398E4C0041D98D /* RecommendApps */,
 				307196AD18343D960009D047 /* REMenu */,
 				302F528C18265E28003FE4F6 /* SBJson */,
 				3007622C1824FB0900D0D80C /* ScrollViewIndicator */,
@@ -3898,6 +3901,8 @@
 				3038F057182703D6004EF92E /* RMChannelDataManager.m */,
 				3038F05918270E51004EF92E /* RMAppData.h */,
 				3038F05A18270E51004EF92E /* RMAppData.m */,
+				307CB57A1848053E0045DE0C /* RMSyncAdData.h */,
+				307CB57B1848053E0045DE0C /* RMSyncAdData.m */,
 			);
 			name = RMDatacenter;
 			path = Controller;
@@ -5057,6 +5062,7 @@
 				302F52BF18265E28003FE4F6 /* NSDataAdditions.m in Sources */,
 				30210E811829D55100406581 /* RMTextViewController.m in Sources */,
 				30512A52182F009400FC9E6C /* UIColor+DigitalColorMeter.m in Sources */,
+				307CB57C1848053E0045DE0C /* RMSyncAdData.m in Sources */,
 				302F52F918265E28003FE4F6 /* StringUtil.m in Sources */,
 				30A56C86182D9DE90020305F /* SDWebImageDownloader.m in Sources */,
 				302F51861825BDBE003FE4F6 /* DraggableView.m in Sources */,
