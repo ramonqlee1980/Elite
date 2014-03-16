@@ -18,6 +18,12 @@
 #import "AdsConfiguration.h"
 #import "Flurry.h"
 #import "RMSyncAdData.h"
+#import "UMSocialWechatHandler.h"
+
+#ifdef DPRAPR_PUSH
+#import "DMAPService.h"
+#import "DMAPTools.h"
+#endif
 
 @interface RMAppDelegate()
 {
@@ -46,7 +52,7 @@
     
     
     [self refreshChannels];
-    [self initSettings];
+    [self initSettings:launchOptions];
     
     return YES;
 }
@@ -112,8 +118,11 @@
 }
 -(UIViewController*)leftViewController:(id<SiderBarDelegate>)delegate
 {
+#if 0//暂时关闭左边栏
     [RMAppData sharedInstance].channelsUIController= [[[RMUIChannelsUIController alloc]init]autorelease];
     return [RMAppData sharedInstance].channelsUIController;
+#endif
+    return nil;
 }
 -(UIViewController*)rightViewController:(id<SiderBarDelegate>)delegate
 {
@@ -182,12 +191,12 @@
 }
 
 #pragma util method
--(void)initSettings
+-(void)initSettings:(NSDictionary *)launchOptions
 {
     //打开调试log的开关
     [UMSocialData openLog:NO];
     //向微信注册
-    [WXApi registerApp:kWeixinID];
+    [UMSocialWechatHandler setWXAppId:kWeixinID url:nil];
     //如果你要支持不同的屏幕方向，需要这样设置，否则在iPhone只支持一个竖屏方向
     [UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
     
@@ -200,6 +209,17 @@
     [Flurry setCrashReportingEnabled:YES];
     
     retryWhenFail2SyncChannels = YES;//初始化重试标示
+    
+#ifdef DPRAPR_PUSH
+    // Required
+    [DMAPService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                     UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    // Required
+    [DMAPService setupWithOption:launchOptions];
+
+//    [DMAPTools developerTestMode];
+#endif
+    
 }
 //请求频道数据
 -(void)refreshChannels
@@ -208,6 +228,29 @@
     [[RMAppData sharedInstance].channelDataManager startRequest:kChannelUrl];
     //TODO::请求广告数据，包括广告的id和开关信息
     [[RMSyncAdData sharedInstance]startRequest];
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    //   token deviceId  publicKey
+#ifdef DPRAPR_PUSH
+    [DMAPService registerDeviceToken:deviceToken];
+#endif
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"error:%@", [error description]);
+    
+}
+
+-(void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
+{
+    // Required
+#ifdef DPRAPR_PUSH
+    [DMAPService handleRemoteNotification:userInfo];
+#endif
 }
 
 @end

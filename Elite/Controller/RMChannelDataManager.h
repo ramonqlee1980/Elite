@@ -15,7 +15,7 @@
 
 typedef void(^UPDATE)(void);
 
-#define kChannelUrl @"http://idreems.duapp.com/beautie.php"
+#define kChannelUrl @"http://idreems.duapp.com/refer.php?table=Makeup"
 
 @interface RMChannelDataManager : NSObject
 

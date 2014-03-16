@@ -85,6 +85,10 @@ Impl_Singleton(RMAppData)
         article.summary = [item objectForKey:kDBSummary];
         article.content = [item objectForKey:kDBContent];
         article.url = [item objectForKey:kDBPageUrl];
+        //
+        if (!article.url|| article.url.length==0) {
+            article.url = kChannelUrl;
+        }
         
         article.title = [article.title sqliteUnescape];
         article.summary = [article.summary sqliteUnescape];

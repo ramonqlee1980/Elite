@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F01835C17796D330055C252 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F01835717796D330055C252 /* background.png */; };
+		3F01835D17796D330055C252 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F01835817796D330055C252 /* icon-72.png */; };
+		3F01835E17796D330055C252 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F01835917796D330055C252 /* icon-72@2x.png */; };
+		3F01835F17796D330055C252 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F01835A17796D330055C252 /* icon.png */; };
+		3F01836017796D330055C252 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F01835B17796D330055C252 /* icon@2x.png */; };
+		3FFE379C174731F300EBAD00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE379B174731F300EBAD00 /* UIKit.framework */; };
+		3FFE379E174731F300EBAD00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE379D174731F300EBAD00 /* Foundation.framework */; };
+		3FFE37A0174731F300EBAD00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE379F174731F300EBAD00 /* CoreGraphics.framework */; };
+		3FFE37A6174731F300EBAD00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37A4174731F300EBAD00 /* InfoPlist.strings */; };
+		3FFE37A8174731F300EBAD00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE37A7174731F300EBAD00 /* main.m */; };
+		3FFE37AC174731F300EBAD00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE37AB174731F300EBAD00 /* AppDelegate.m */; };
+		3FFE37AE174731F300EBAD00 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37AD174731F300EBAD00 /* Default.png */; };
+		3FFE37B0174731F300EBAD00 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37AF174731F300EBAD00 /* Default@2x.png */; };
+		3FFE37B2174731F300EBAD00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37B1174731F300EBAD00 /* Default-568h@2x.png */; };
+		3FFE37B5174731F300EBAD00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE37B4174731F300EBAD00 /* ViewController.m */; };
+		3FFE37B8174731F300EBAD00 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37B6174731F300EBAD00 /* ViewController_iPhone.xib */; };
+		3FFE37BB174731F300EBAD00 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37B9174731F300EBAD00 /* ViewController_iPad.xib */; };
+		3FFE37CF1747352B00EBAD00 /* DMAPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE37C71747352B00EBAD00 /* DMAPConfig.plist */; };
+		3FFE37D01747352B00EBAD00 /* DMAPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37C81747352B00EBAD00 /* DMAPLib.a */; };
+		3FFE37DA1747356300EBAD00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37D91747356300EBAD00 /* CFNetwork.framework */; };
+		3FFE37DF1747356300EBAD00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37DB1747356300EBAD00 /* CoreLocation.framework */; };
+		3FFE37E01747356300EBAD00 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37DC1747356300EBAD00 /* CoreTelephony.framework */; };
+		3FFE37E11747356300EBAD00 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37DD1747356300EBAD00 /* MediaPlayer.framework */; };
+		3FFE37E21747356300EBAD00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE37DE1747356300EBAD00 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F01835717796D330055C252 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3F01835817796D330055C252 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		3F01835917796D330055C252 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		3F01835A17796D330055C252 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3F01835B17796D330055C252 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		3F4592CE1785753B0007438D /* DMAPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAPTools.h; sourceTree = "<group>"; };
+		3FFE3798174731F300EBAD00 /* DMAPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMAPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFE379B174731F300EBAD00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FFE379D174731F300EBAD00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FFE379F174731F300EBAD00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FFE37A3174731F300EBAD00 /* DMAPClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMAPClient-Info.plist"; sourceTree = "<group>"; };
+		3FFE37A5174731F300EBAD00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FFE37A7174731F300EBAD00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FFE37A9174731F300EBAD00 /* DMAPClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMAPClient-Prefix.pch"; sourceTree = "<group>"; };
+		3FFE37AA174731F300EBAD00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FFE37AB174731F300EBAD00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FFE37AD174731F300EBAD00 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FFE37AF174731F300EBAD00 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FFE37B1174731F300EBAD00 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FFE37B3174731F300EBAD00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FFE37B4174731F300EBAD00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FFE37B7174731F300EBAD00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		3FFE37BA174731F300EBAD00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		3FFE37C71747352B00EBAD00 /* DMAPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DMAPConfig.plist; sourceTree = "<group>"; };
+		3FFE37C81747352B00EBAD00 /* DMAPLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = DMAPLib.a; sourceTree = "<group>"; };
+		3FFE37C91747352B00EBAD00 /* DMAPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAPService.h; sourceTree = "<group>"; };
+		3FFE37D91747356300EBAD00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3FFE37DB1747356300EBAD00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FFE37DC1747356300EBAD00 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3FFE37DD1747356300EBAD00 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3FFE37DE1747356300EBAD00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FFE3795174731F300EBAD00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFE37DF1747356300EBAD00 /* CoreLocation.framework in Frameworks */,
+				3FFE37E01747356300EBAD00 /* CoreTelephony.framework in Frameworks */,
+				3FFE37E11747356300EBAD00 /* MediaPlayer.framework in Frameworks */,
+				3FFE37E21747356300EBAD00 /* SystemConfiguration.framework in Frameworks */,
+				3FFE37A0174731F300EBAD00 /* CoreGraphics.framework in Frameworks */,
+				3FFE37DA1747356300EBAD00 /* CFNetwork.framework in Frameworks */,
+				3FFE379C174731F300EBAD00 /* UIKit.framework in Frameworks */,
+				3FFE379E174731F300EBAD00 /* Foundation.framework in Frameworks */,
+				3FFE37D01747352B00EBAD00 /* DMAPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FFE378F174731F300EBAD00 = {
+			isa = PBXGroup;
+			children = (
+				3FFE37A1174731F300EBAD00 /* DMAPClient */,
+				3FFE379A174731F300EBAD00 /* Frameworks */,
+				3FFE3799174731F300EBAD00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FFE3799174731F300EBAD00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFE3798174731F300EBAD00 /* DMAPClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FFE379A174731F300EBAD00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FFE37DB1747356300EBAD00 /* CoreLocation.framework */,
+				3FFE37DC1747356300EBAD00 /* CoreTelephony.framework */,
+				3FFE37DD1747356300EBAD00 /* MediaPlayer.framework */,
+				3FFE37DE1747356300EBAD00 /* SystemConfiguration.framework */,
+				3FFE37D91747356300EBAD00 /* CFNetwork.framework */,
+				3FFE379B174731F300EBAD00 /* UIKit.framework */,
+				3FFE379D174731F300EBAD00 /* Foundation.framework */,
+				3FFE379F174731F300EBAD00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FFE37A1174731F300EBAD00 /* DMAPClient */ = {
+			isa = PBXGroup;
+			children = (
+				3FFE37C61747352B00EBAD00 /* lib */,
+				3FFE37AA174731F300EBAD00 /* AppDelegate.h */,
+				3FFE37AB174731F300EBAD00 /* AppDelegate.m */,
+				3FFE37B3174731F300EBAD00 /* ViewController.h */,
+				3FFE37B4174731F300EBAD00 /* ViewController.m */,
+				3FFE37B6174731F300EBAD00 /* ViewController_iPhone.xib */,
+				3FFE37B9174731F300EBAD00 /* ViewController_iPad.xib */,
+				3FFE37A2174731F300EBAD00 /* Supporting Files */,
+			);
+			path = DMAPClient;
+			sourceTree = "<group>";
+		};
+		3FFE37A2174731F300EBAD00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F01835717796D330055C252 /* background.png */,
+				3F01835817796D330055C252 /* icon-72.png */,
+				3F01835917796D330055C252 /* icon-72@2x.png */,
+				3F01835A17796D330055C252 /* icon.png */,
+				3F01835B17796D330055C252 /* icon@2x.png */,
+				3FFE37A3174731F300EBAD00 /* DMAPClient-Info.plist */,
+				3FFE37A4174731F300EBAD00 /* InfoPlist.strings */,
+				3FFE37A7174731F300EBAD00 /* main.m */,
+				3FFE37A9174731F300EBAD00 /* DMAPClient-Prefix.pch */,
+				3FFE37AD174731F300EBAD00 /* Default.png */,
+				3FFE37AF174731F300EBAD00 /* Default@2x.png */,
+				3FFE37B1174731F300EBAD00 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FFE37C61747352B00EBAD00 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3F4592CE1785753B0007438D /* DMAPTools.h */,
+				3FFE37C71747352B00EBAD00 /* DMAPConfig.plist */,
+				3FFE37C81747352B00EBAD00 /* DMAPLib.a */,
+				3FFE37C91747352B00EBAD00 /* DMAPService.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FFE3797174731F300EBAD00 /* DMAPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFE37BE174731F300EBAD00 /* Build configuration list for PBXNativeTarget "DMAPClient" */;
+			buildPhases = (
+				3FFE3794174731F300EBAD00 /* Sources */,
+				3FFE3795174731F300EBAD00 /* Frameworks */,
+				3FFE3796174731F300EBAD00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMAPClient;
+			productName = DMAPClient;
+			productReference = 3FFE3798174731F300EBAD00 /* DMAPClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FFE3790174731F300EBAD00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = besterChen;
+			};
+			buildConfigurationList = 3FFE3793174731F300EBAD00 /* Build configuration list for PBXProject "DMAPClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FFE378F174731F300EBAD00;
+			productRefGroup = 3FFE3799174731F300EBAD00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FFE3797174731F300EBAD00 /* DMAPClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FFE3796174731F300EBAD00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFE37A6174731F300EBAD00 /* InfoPlist.strings in Resources */,
+				3FFE37AE174731F300EBAD00 /* Default.png in Resources */,
+				3FFE37B0174731F300EBAD00 /* Default@2x.png in Resources */,
+				3FFE37B2174731F300EBAD00 /* Default-568h@2x.png in Resources */,
+				3FFE37B8174731F300EBAD00 /* ViewController_iPhone.xib in Resources */,
+				3FFE37BB174731F300EBAD00 /* ViewController_iPad.xib in Resources */,
+				3FFE37CF1747352B00EBAD00 /* DMAPConfig.plist in Resources */,
+				3F01835C17796D330055C252 /* background.png in Resources */,
+				3F01835D17796D330055C252 /* icon-72.png in Resources */,
+				3F01835E17796D330055C252 /* icon-72@2x.png in Resources */,
+				3F01835F17796D330055C252 /* icon.png in Resources */,
+				3F01836017796D330055C252 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FFE3794174731F300EBAD00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFE37A8174731F300EBAD00 /* main.m in Sources */,
+				3FFE37AC174731F300EBAD00 /* AppDelegate.m in Sources */,
+				3FFE37B5174731F300EBAD00 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FFE37A4174731F300EBAD00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFE37A5174731F300EBAD00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FFE37B6174731F300EBAD00 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFE37B7174731F300EBAD00 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3FFE37B9174731F300EBAD00 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFE37BA174731F300EBAD00 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FFE37BC174731F300EBAD00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FFE37BD174731F300EBAD00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FFE37BF174731F300EBAD00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ming Li (6ZAM6HQ2F7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ming Li (6ZAM6HQ2F7)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAPClient/DMAPClient-Prefix.pch";
+				INFOPLIST_FILE = "DMAPClient/DMAPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DMAPClient/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "234DEDEB-C299-4682-961E-82C48E489BEB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "234DEDEB-C299-4682-961E-82C48E489BEB";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FFE37C0174731F300EBAD00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ming Li (QBJ9PY6FYT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ming Li (QBJ9PY6FYT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAPClient/DMAPClient-Prefix.pch";
+				INFOPLIST_FILE = "DMAPClient/DMAPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DMAPClient/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "234DEDEB-C299-4682-961E-82C48E489BEB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "234DEDEB-C299-4682-961E-82C48E489BEB";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FFE3793174731F300EBAD00 /* Build configuration list for PBXProject "DMAPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFE37BC174731F300EBAD00 /* Debug */,
+				3FFE37BD174731F300EBAD00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFE37BE174731F300EBAD00 /* Build configuration list for PBXNativeTarget "DMAPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFE37BF174731F300EBAD00 /* Debug */,
+				3FFE37C0174731F300EBAD00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FFE3790174731F300EBAD00 /* Project object */;
+}

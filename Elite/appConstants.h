@@ -2,26 +2,20 @@
 #define DailyProject_appConstants_h
 
 
-#define UMENG_APPKEY @"5288a23356240b9bef15f30b"//umeng sdk 所需要的key
-#define kDefaultMobisageId @"620d94c9d3594cd88352a9efff1f48e6"//申请专用的id
-#define kFlurryID @"6D2KNQGDFGHJ4Y5S58ZH"//mmbasics
-#define kWeixinID @"wx069cb31cc2c774a0"
-#define kAppId 759202888
-
-
 #warning 发布时确认
-//1.drappr为非测试模式
-//2.更新info中的weixin appid
-//3.更新drappr的appkey
-//4.修改bundleId的定义，见本文件
-//5.修改iap中的id，见Define.h文件
-
-//#define __RELEASE__
-#ifdef __RELEASE__
-#define DPRAPR_PUSH//push广告开关
+//drappr为非测试模式
 //#define __PUSH_ON__TEST_MODE__//testmode
-//#define NSLog(...) {}
-#endif//__RELEASE__
+
+#ifndef __PUSH_ON__TEST_MODE__
+#define DPRAPR_PUSH//push广告开关
+#define NSLog(...) {}
+#endif
+
+#define UMENG_APPKEY @"4fa7d6b85270157298000020"
+#define kDefaultMobisageId @"c6edb00a37f4435ca06eef7f016df0bb"
+#define kFlurryID @"ZVSNS9NXX922ZMYBV436"
+#define kWeixinID @"wx1732ccc0f4c8954d"
+#define kAppId 469269134
 
 #define kDefaultEmailRecipients @"feedback4iosapp@gmail.com"
 

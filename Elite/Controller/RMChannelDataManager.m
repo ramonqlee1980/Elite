@@ -42,7 +42,7 @@ Impl_Singleton(RMChannelDataManager)
             return;
         }
         NSData* data = [notification.userInfo objectForKey:channelUrl];
-        NSLog(@"%@",data);
+//        NSLog(@"%@",data);
         
         channelsObj = [RMChannels initWithData:data];
         [channelsObj retain];

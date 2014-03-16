@@ -8,6 +8,9 @@
 
 #import "RMArticle.h"
 
+
+#define kDefaultUrl @"http://www.idreems.com/default.html"
+
 @implementation RMArticle
 @synthesize title;
 @synthesize summary;
@@ -36,6 +39,10 @@
                     article.thumbnailUrl = [item valueForKey:kDBLowercaseThumbnail];
                     article.content = [item valueForKey:kDBLowercaseContent];
                     article.url = [item valueForKey:kDBPageUrl];
+                    //
+                    if (!article.url|| article.url.length==0) {
+                        article.url = kDefaultUrl;
+                    }
                     
                     const id kNull = (id)[NSNull null];
                     if (article.title && article.title != kNull) {

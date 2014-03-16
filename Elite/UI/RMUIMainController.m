@@ -57,15 +57,16 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
-    
+#if 0//暂时关闭左边栏
     UIBarButtonItem *button =
     [UIBarButtonItem barItemWithImage:[UIImage imageNamed:@"top_navigation_menuicon.png"]
                         selectedImage:[UIImage imageNamed:@"top_navigation_menuicon.png"]
                                target:self
                                action:@selector(showLeft:)];
     self.navigationItem.leftBarButtonItem = button;
+#endif
     
-    button =
+   UIBarButtonItem *button =
     [UIBarButtonItem barItemWithImage:[UIImage imageNamed:@"setting_icon.png"]
                         selectedImage:[UIImage imageNamed:@"setting_icon.png"]
                                target:self
